@@ -1,0 +1,40 @@
+If a LogicType uses a DBType, it must manage this DBType. 
+Each Logic can only access StorageAPI.
+No BackdoorServlet accesses LogicCorePackage or LogicAPI. 
+No LogicAPI accesses LogicBackdoor.
+No LogicCorePackage accesses LogicBackdoor.
+No LogicCorePackage accesses LogicAPI.
+Common can only access Common or StorageEntityPackage.
+No Logic accesses UI.
+No Storage accesses Logic.
+Only ActionClass can touch LogicAPI. 
+
+No Logic touches UI.
+No Storage touches Logic.
+No Storage touches UI.
+Only PageData can use Template.
+Only Controller can use PageData.
+Controller can only access Controller.
+AutomatedAction can only access AutomatedAction.
+No AutomatedAction accesses UI.
+
+No StorageSearchPackage touches StorageEntityPackage.
+No StorageEntityPackage dependsOn Storage.
+
+No TestCase uses TestCase.
+Only UITest can test PageObject.
+Only DataTransferTest can test StorageEntityPackage.
+
+ClientScript can only access ClientScript.
+No Client touches UI.
+No ClientRemoteAPI dependsOn ClientScript.
+No ClientUtil dependsOn ClientPackage.
+
+No TeammatesThing accesses JavaUtilLogger.
+Only GoogleCloudStorageHelper can access GoogleCloudStorageAPI.
+Only TaskQueuesLogic can access TaskQueueAPI.
+Only RemoteAPIClient can access RemoteAPI.
+
+
+
+

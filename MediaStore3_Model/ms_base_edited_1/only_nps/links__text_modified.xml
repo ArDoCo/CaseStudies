@@ -1,0 +1,311 @@
+<modelEntityPhraseLinks>
+    <!--One of the main components of Media Store is a server-side web front end, namely the Facade component, which delivers websites to the users and provides session management.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nrT0ACuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>0</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>16</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--To this end, the Facade component delivers the corresponding registration and log-in pages to users.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nrT0ACuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>2</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>4</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--In addition, users can browse, download, and upload audio files using the Facade component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nrT0ACuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>5</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>14</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+
+
+    <!--Application business logic is provided by a central business logic component, called the MediaManagement component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>6</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>13</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The MediaHandling component coordinates the communication of other components.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>7</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Thus it is sometimes called media coordinator, ComponentManagement or even CommunicationCoordinator.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>8</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>5</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Thus it is sometimes called media coordinator, ComponentManagement or even CommunicationCoordinator.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>8</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>8</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Thus it is sometimes called media coordinator, ComponentManagement or even CommunicationCoordinator.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>8</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>11</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The UserManagement component answers the requests for registration and authentication.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oXNQsCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>11</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Sometimes it is called UserRegistration and sometimes user authentication handler component, depending on its current use.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oXNQsCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>12</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>4</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Sometimes it is called UserRegistration and sometimes user authentication handler component, depending on its current use.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oXNQsCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>12</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>7</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The User database Adapter component queries the database.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>13</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The User database Adapter component queries the database.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>13</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>6</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--When a user logs into the system, Media Store does not store the password in plain text, but rather the User management component implements further functions to hash and salt the passwords.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oXNQsCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>14</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>21</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The re-encoded files are then digitally and individually watermarked by the TagWatermarking component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oG2ggCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>17</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>10</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Afterward, the Media-Management component forwards these audio files from tag-watermarking to the user.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>18</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>2</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Afterward, the Media-Management component forwards these audio files from tag-watermarking to the user.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oG2ggCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>18</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>10</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--To allow users to download several files at a time, we provide the Packaging component, which archives multiple audio files into a single compressed file.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oEuZkCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>20</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>13</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The ReEncoder component converts the bit rates of audio files.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n9Jx8CuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>21</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--This converter component is also sometimes called bitrate converter.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n9Jx8CuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>22</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--This converter component is also sometimes called bitrate converter.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n9Jx8CuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>22</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>7</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--To allow users to download several files at a time, we provide the container component, which archives multiple audio files into a single compressed file.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oEuZkCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>23</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>13</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+
+    <!--The Database component represents an actual database.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>26</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--After the user calls the page to list all available audio files, AudioAccess creates a query that is sent to the storage component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oFpmoCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>28</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>21</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+
+    <!--When a user uploads an audio file, the MediaAccess component saves it at the predefined location.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nzdqcCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>29</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>8</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The MediaAccess component encapsulates database access for meta-data of audio files.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nzdqcCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>30</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The MediaAccess component encapsulates database access for meta-data of audio files.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>30</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>4</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--by contrast, the UserDBAdapter component provides all functions required in order to encapsulate database access for the user data.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>32</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>3</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--by contrast, the UserDBAdapter component provides all functions required in order to encapsulate database access for the user data.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>32</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>14</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The UserDBWrapper component creates a query based on the user's request.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>33</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The User-database-wrapper component creates a query based on the user's request.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>34</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--The User database wrapper component creates a query based on the user's request.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>35</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+
+    <!--The Data storage component then executes the actual query for files.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oFpmoCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>36</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>0</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--All salted hashes of passwords are also stored in the Database component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>37</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>9</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--When a user requests files to download, the MediaAccess component fetches the associated meta-data from the Database.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nzdqcCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>38</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>8</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--When a user requests files to download, the MediaAccess component fetches the associated meta-data from the Database.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>38</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>16</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--Afterwards, based on the user request and the corresponding meta-data, the file will be retrieved from the DataStorage.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oFpmoCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>39</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>18</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--When a user uploads a file, it will be stored in the storage component without any change; however, a download can activate the re-encoding component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oFpmoCuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>40</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>12</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--When a user uploads a file, it will be stored in the storage component without any change; however, a download can activate the re-encoding component.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n9Jx8CuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>40</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>25</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--For better load distribution for downloads, we use a load balancer.-->
+    <modelEntityPhraseLink>
+        <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pGZR8CuDEemR-tUTUqxwQw</modelURI>
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber>41</parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber>9</parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    <!--
+    <modelEntityPhraseLink>
+        
+        <parsePhrase></parsePhrase>
+        <parseSentenceNumber></parseSentenceNumber>
+        <parseFirstWordOfPhraseInSentenceNumber></parseFirstWordOfPhraseInSentenceNumber>
+    </modelEntityPhraseLink>
+    -->
+    <!--
+        AudioWatermarking       <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n3OJECuDEemR-tUTUqxwQw</modelURI>
+        Cache                   <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oSRtYCuDEemR-tUTUqxwQw</modelURI>
+        DB                      <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oYr3YCuDEemR-tUTUqxwQw</modelURI>
+        DownloadLoadBalancer    <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pGZR8CuDEemR-tUTUqxwQw</modelURI>
+        Facade                  <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nrT0ACuDEemR-tUTUqxwQw</modelURI>
+        FileStorage             <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oFpmoCuDEemR-tUTUqxwQw</modelURI>
+        MediaAccess             <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nzdqcCuDEemR-tUTUqxwQw</modelURI>
+        MediaManagement         <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_pNNroCuDEemR-tUTUqxwQw</modelURI>
+        Packaging               <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oEuZkCuDEemR-tUTUqxwQw</modelURI>
+        ParallelWatermarking    <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_o_FJACuDEemR-tUTUqxwQw</modelURI>
+        Reencoding              <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_n9Jx8CuDEemR-tUTUqxwQw</modelURI>
+        TagWatermarking         <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oG2ggCuDEemR-tUTUqxwQw</modelURI>
+        UserDBAdapter           <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_nry8MCuDEemR-tUTUqxwQw</modelURI>
+        UserManagement          <modelURI>http://palladiosimulator.org/PalladioComponentModel/5.2/owl#BasicComponent_oXNQsCuDEemR-tUTUqxwQw</modelURI>
+    -->
+</modelEntityPhraseLinks>

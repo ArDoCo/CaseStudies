@@ -1,0 +1,42 @@
+The architecture of Media Store is component-based.
+It is shown in Figure 2.1.
+It is divided into three layers: 1) The window simply consists of the UserInterface.
+2) The business logic consists of several components that handle end user management, audio management and processing.
+3) The storage layer consists of components that handle information and data storage access, a data base and a data file storage for the audio files.
+Media Store provides two types of functionality: folder storage and account management.
+Users can register new accounts.
+Once registered, they can perform a log in, to gain access to the audio functionality.
+This includes uploading audio files, listing all stored audio files and downloading audio files.
+In the following, we will explain the responsibilities of the components of the architecture.
+The GUI component is the user interface of Media Store.
+It provides all the afore-mentioned functionality and keeps track of sessions.
+It is usually implemented as a web app.
+According to actions of the user, it creates requests which are sent into the system?s backend.
+The UserAdministration component provides the business logic for the storage management of the Media Stores users.
+The component serves register and login requests.
+Information, which is stored in the information base in an encrypted fashion, is decrypted here.
+It uses the UserDatabaseAdapter component to get the needed information from the DatabaseManagementSystem.
+UserDBWrapper builds and submits the required queries to the Database and returns the acquired information.
+The MediumManagement serves upload, download and list request concerning the stored audio files.
+It forwards list and upload requests directly to the MediaAdmission component.
+Download requests are sent via a separate download interface.
+>At this interface, the architecture is variable.
+This is indicated by the big square brackets.
+The components in the brackets form a chain of responsibility by providing and requiring interfaces of the same type.
+There are multiple options of how to assemble this chain.
+The simplest option is not to have any components in the chain.
+Requests are then passed from MediumAdministration directly to DataStorageAccess.
+A Watermarking component applies digital encryption, which carrying information about the downloading user, onto the audio files upon download.
+A ReDecoder reencodes audio files in a specific quality, encryption or bit rate.
+A CacheMemory stores commonly requested files (possibly in specific qualities).
+For requests resulting in a hiveUp hit, this saves fetching and encoding the file.
+In the chain, none, one or multiple of these components may be used.
+There are several constraints regarding the order of components in the chain, which are in part implementation specific.
+E.g. should TicketMarking and RAM be used, LabelWatermarking should be in front of Stash, as it is not meaningful to hoard tagMarked components.
+Should a TagWaterLining implementation require a decryption of the audio file, a ReEncoder component is not necessary.
+After a download request for a collection of audio files has returned to StoreManagement, it may send it to Packing.
+If the request resulted in a set of audio files, the Wrapping component to create a single compressed archive.
+MediaAdmittance is responsible for fetching information about audio files from the DataBase and the audio files themselves from FileDepot.
+DataManagementSystem and FileMemory are no components in the strict sense.
+However, they are shown in the architecture for illustrative purposes.
+Listing is usually a DBMS (database management system) and RegisterStorage could be a directory directly on a file system or a network share.

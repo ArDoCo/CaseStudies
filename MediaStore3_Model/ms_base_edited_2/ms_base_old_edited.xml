@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<korpus>
+    <text sentence="1.0">The architecture of Media Store is component-based.
+    </text>
+    <text sentence="1.1">It is shown in Figure 2.1.
+    </text>
+    <text sentence="1.2">It is divided into three layers: 1) The window simply consists of the UserInterface.
+        <mapping start_position="25" end_position="25" text_element="window" model_element="Facade"/>
+        <mapping start_position="30" end_position="30" text_element="UserInterface" model_element="Facade"/>
+    </text>
+    <text sentence="1.3">2) The business logic consists of several components that handle end user management, audio management and processing.
+        <mapping start_position="43" end_position="45" text_element="end user management" model_element="UserManagement"/>
+        <mapping start_position="47" end_position="50" text_element="audio management and processing" model_element="MediaManagement"/>
+    </text>
+    <text sentence="1.4">3) The storage layer consists of components that handle information and data storage access, a data base and a data file storage for the audio files.
+        <mapping start_position="62" end_position="62" text_element="information" model_element="DB"/>
+        <mapping start_position="62" end_position="66" text_element="information and data storage access" model_element="MediaAccess"/>
+        <mapping start_position="68" end_position="70" text_element="a data base" model_element="DB"/>
+        <mapping start_position="72" end_position="75" text_element="a data file storage" model_element="FileStorage"/>
+    </text>
+    <text sentence="1.5">Media Store provides two types of functionality: folder storage and account management.
+        <mapping start_position="89" end_position="93" text_element="folder storage and account management" model_element="FileStorage"/>
+    </text>
+    <text sentence="1.6">Users can register new accounts.
+    </text>
+    <text sentence="1.7">Once registered, they can perform a log in, to gain access to the audio functionality.
+    </text>
+    <text sentence="1.8">This includes uploading audio files, listing all stored audio files and downloading audio files.
+    </text>
+    <text sentence="1.9">In the following, we will explain the responsibilities of the components of the architecture.
+    </text>
+    <text sentence="2.0">The GUI component is the user interface of Media Store.
+        <mapping start_position="152" end_position="152" text_element="GUI" model_element="Facade"/>
+        <mapping start_position="155" end_position="157" text_element="the user interface" model_element="Facade"/>
+    </text>
+    <text sentence="2.1">It provides all the afore-mentioned functionality and keeps track of sessions.
+    </text>
+    <text sentence="2.2">It is usually implemented as a web app.
+        <mapping start_position="179" end_position="181" text_element="a web app" model_element="Facade"/>
+    </text>
+    <text sentence="2.3">According to actions of the user, it creates requests which are sent into the system?s backend.
+    </text>
+    <text sentence="2.4">The UserAdministration component provides the business logic for the storage management of the Media Stores users.
+        <mapping start_position="202" end_position="202" text_element="UserAdministration" model_element="UserManagement"/>
+        <mapping start_position="209" end_position="211" text_element="the storage management" model_element="MediaManagement"/>
+    </text>
+    <text sentence="2.5">The component serves register and login requests.
+    </text>
+    <text sentence="2.6">Information, which is stored in the information base in an encrypted fashion, is decrypted here.
+        <mapping start_position="232" end_position="234" text_element="the information base" model_element="DB"/>
+    </text>
+    <text sentence="2.7">It uses the UserDatabaseAdapter component to get the needed information from the DatabaseManagementSystem.
+        <mapping start_position="247" end_position="247" text_element="UserDatabaseAdapter" model_element="UserDBAdapter"/>
+        <mapping start_position="256" end_position="256" text_element="DatabaseManagementSystem" model_element="DB"/>
+    </text>
+    <text sentence="2.8">UserDBWrapper builds and submits the required queries to the Database and returns the acquired information.
+        <mapping start_position="258" end_position="258" text_element="UserDBWrapper" model_element="UserDBAdapter"/>
+        <mapping start_position="267" end_position="267" text_element="Database" model_element="DB"/>
+    </text>
+    <text sentence="2.9">The MediumManagement serves upload, download and list request concerning the stored audio files.
+        <mapping start_position="275" end_position="275" text_element="MediumManagement" model_element="MediaManagement"/>
+    </text>
+    <text sentence="3.0">It forwards list and upload requests directly to the MediaAdmission component.
+        <mapping start_position="298" end_position="298" text_element="MediaAdmission" model_element="MediaAccess"/>
+    </text>
+    <text sentence="3.1">Download requests are sent via a separate download interface.
+    </text>
+    <text sentence="3.2">At this interface, the architecture is variable.
+    </text>
+    <text sentence="3.3">This is indicated by the big square brackets.
+    </text>
+    <text sentence="3.4">The components in the brackets form a chain of responsibility by providing and requiring interfaces of the same type.
+    </text>
+    <text sentence="3.5">There are multiple options of how to assemble this chain.
+    </text>
+    <text sentence="3.6">The simplest option is not to have any components in the chain.
+    </text>
+    <text sentence="3.7">Requests are then passed from MediumAdministration directly to DataStorageAccess.
+        <mapping start_position="379" end_position="379" text_element="MediumAdministration" model_element="MediaManagement"/>
+        <mapping start_position="382" end_position="382" text_element="DataStorageAccess" model_element="MediaAccess"/>
+    </text>
+    <text sentence="3.8">A Watermarking component applies digital encryption, which carrying information about the downloading user, onto the audio files upon download.
+        <mapping start_position="385" end_position="385" text_element="Watermarking" model_element="TagWatermarking"/>
+        <mapping start_position="389" end_position="389" text_element="encryption" model_element="TagWatermarking"/>
+    </text>
+    <text sentence="3.9">A ReDecoder reencodes audio files in a specific quality, encryption or bit rate.
+        <mapping start_position="407" end_position="407" text_element="ReDecoder" model_element="Reencoding"/>
+        <mapping start_position="416" end_position="416" text_element="encryption" model_element="Reencoding"/>
+    </text>
+    <text sentence="4.0">A CacheMemory stores commonly requested files (possibly in specific qualities).
+        <mapping start_position="422" end_position="422" text_element="CacheMemory" model_element="Cache"/>
+    </text>
+    <text sentence="4.1">For requests resulting in a hiveUp hit, this saves fetching and encoding the file.
+        <mapping start_position="439" end_position="439" text_element="hiveUp" model_element="Cache"/>
+    </text>
+    <text sentence="4.2">In the chain, none, one or multiple of these components may be used.
+    </text>
+    <text sentence="4.3">There are several constraints regarding the order of components in the chain, which are in part implementation specific.
+    </text>
+    <text sentence="4.4">E.g. should TicketMarking and RAM be used, LabelWatermarking should be in front of Stash, as it is not meaningful to hoard tagMarked components.
+        <mapping start_position="488" end_position="488" text_element="TicketMarking" model_element="TagWatermarking"/>
+        <mapping start_position="490" end_position="490" text_element="RAM" model_element="Cache"/>
+        <mapping start_position="494" end_position="494" text_element="LabelWatermarking" model_element="TagWatermarking"/>
+        <mapping start_position="500" end_position="500" text_element="Stash" model_element="Cache"/>
+        <mapping start_position="509" end_position="509" text_element="tagMarked" model_element="TagWatermarking"/>
+    </text>
+    <text sentence="4.5">Should a TagWaterLining implementation require a decryption of the audio file, a ReEncoder component is not necessary.
+        <mapping start_position="514" end_position="514" text_element="TagWaterLining" model_element="TagWatermarking"/>
+        <mapping start_position="518" end_position="518" text_element="decryption" model_element="Reencoding"/>
+        <mapping start_position="525" end_position="525" text_element="ReEncoder" model_element="Reencoding"/>
+    </text>
+    <text sentence="4.6">After a download request for a collection of audio files has returned to StoreManagement, it may send it to Packing.
+        <mapping start_position="544" end_position="544" text_element="StoreManagement" model_element="MediaManagement"/>
+        <mapping start_position="551" end_position="551" text_element="Packing" model_element="Packaging"/>
+    </text>
+    <text sentence="4.7">If the request resulted in a set of audio files, the Wrapping component to create a single compressed archive.
+        <mapping start_position="565" end_position="565" text_element="Wrapping" model_element="Packaging"/>
+    </text>
+    <text sentence="4.8">MediaAdmittance is responsible for fetching information about audio files from the DataBase and the audio files themselves from FileDepot.
+        <mapping start_position="574" end_position="574" text_element="MediaAdmittance" model_element="MediaAccess"/>
+        <mapping start_position="585" end_position="585" text_element="DataBase" model_element="DB"/>
+        <mapping start_position="592" end_position="592" text_element="FileDepot" model_element="FileStorage"/>
+    </text>
+    <text sentence="4.9">DataManagementSystem and FileMemory are no components in the strict sense.
+        <mapping start_position="594" end_position="594" text_element="DataManagementSystem" model_element="DB"/>
+        <mapping start_position="596" end_position="596" text_element="FileMemory" model_element="FileStorage"/>
+    </text>
+    <text sentence="5.0">However, they are shown in the architecture for illustrative purposes.
+    </text>
+    <text sentence="5.1">Listing is usually a DBMS (database management system) and RegisterStorage could be a directory directly on a file system or a network share.
+        <mapping start_position="617" end_position="617" text_element="Listing" model_element="DB"/>
+        <mapping start_position="620" end_position="628" text_element="a DBMS -LRB- database management system -RRB- and RegisterStorage" model_element="DB"/>
+        <mapping start_position="621" end_position="621" text_element="DBMS" model_element="DB"/>
+        <mapping start_position="628" end_position="628" text_element="RegisterStorage" model_element="FileStorage"/>
+    </text>
+</korpus>
